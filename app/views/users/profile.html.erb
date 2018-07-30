@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+label.error{
+    color: red !important;
+    font-weight: normal !important;
+}
+</style>
+</head>
+<body>
+
+  <div class="main-content">
+    <div class="inner-banner d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-12">
+              <div class="banner-inner-text">
+                <h3>The blockchain-based marketplace for digital content</h3>
+                <p>Buy and Sell Bitcoins & other blockchain assets with Crypto Wallet</p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-content-mainblock mt-top-minus pt20">
+      <div class="container-common">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="inner-content-block-s bg-gray pt0 mb0">
+                <form class="main-form no-background p0 max-WT-1024">
+                  <div class="form-group mb0">
+                    <div class="edit-profile-left">
+                      <div class="edit-img-profile">
+                        <div class="camera-icon">
+                          <i class="fas fa-camera"></i>
+                          <input type="file" name="">
+                        </div>
+                        <img src="/assets/edit-img.png" alt="support" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card form-card">
+                    <div class="card-body">
+                      <div class="form-group d-flex flex-wrap justify-content-between mb0">
+                        <div class="input-field">
+                          <input type="text" class="form-control mb10 " placeholder="Jhye Richardson">
+                        </div>
+                        <div class="input-field">
+                          <input type="email" class="form-control mb10" placeholder="jhye.richardson@yahoo.com">
+                        </div>
+                      </div>
+                      <div class="form-group d-flex flex-wrap justify-content-between mb0">
+                        <div class="input-field">
+                          <div class="input-group input-group-contact mb10">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <select class="form-control select-custome">
+                                  <option>+91</option>
+                                  <option>+91</option>
+                                  <option>+91</option>
+                                  <option>+91</option>
+                                </select>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="99999999">
+                          </div>
+                        </div>
+                        <div class="input-field">
+                          <select class="form-control select_style2 mb10">
+                            <option selected>Country Name</option>
+                            <option >Indai</option>
+                            <option>Country Name</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group d-flex flex-wrap justify-content-between mb0">
+                        <div class="input-field">
+                          <select class="form-control select_style2 mb10">
+                            <option>City</option>
+                            <option >Indai</option>
+                            <option>Country Name</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <input type="text" class="form-control mb10 calender" placeholder="22/01/2018">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card form-card">
+                    <div class="card-body text-center">
+                      <div class="form-group d-flex flex-wrap justify-content-between mb0">
+                        <p class="w-100">Please,Be careful your ETH Wallet must support ERC-20. Your Ethereum & Bitcoin address cannot be changed after your first transaction</p>
+                        <div class="input-field">
+                          <input type="text" class="form-control mb10 " value="jhnviuhnviuregnmnviuregvni">
+                        </div>
+                        <div class="input-field">
+                          <input type="text" class="form-control mb10" value="jhnviuhnviuregnmnviuregvni">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card form-card no-background pTB0">
+                    <div class="card-body text-center pTB10">
+                      <div class="form-group d-flex flex-wrap justify-content-center mb0">
+                        <button class="btn btn-common blue font-14 max-WT-200 mr-5">Save Changes</button>
+                        <button type="button" class="btn btn-common light-red font-14 max-WT-200 mr-5" data-toggle="modal" data-target="#changePassword">Change Password</button>
+                        <%= link_to "Transaction History",transaction_history_users_path,class: "btn btn-common light-gray font-14 max-WT-200 mr-5"  %><!-- <button class="btn btn-common light-gray font-14 max-WT-200 mr-5">Transaction History</button> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card form-card">
+                    <div class="card-body text-center">
+                      <div class="form-group d-flex flex-wrap text-center justify-content-between mb0">
+                        <h3 class="w-100">2-Step Verification</h3>
+                        <p class="w-100">Application for generating 2-step verification codes allow you to receive codes even without connecting to the network and cellular communications. Use any application to generate 2-Step Verification code. For example,Google Authenticator.</p>
+                      </div>
+                      <div class="form-group d-flex flex-wrap justify-content-center mb0">
+                        <button class="btn btn-common btn-outline max-WT-250 mr-5">Google Authentication</button>
+                        <button class="btn btn-common btn-outline max-WT-250 mr-5">OTP Authentication</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Change-password -->
+  <div class="modal fade common-modal" id="changePassword" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-600" role="document">
+      <div class="modal-content">
+          <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+         <div class="modal-body custome-modla-body min-ht-300 d-flex align-items-center">
+          <div class="form-block p0 mb0 text-center">
+            <h3 class="modal_form_heading">Change Password</h3>
+            <!-- <form class="main-form max-WT-480 pb0"> -->
+            <%= form_with scope: :user,url: change_password_users_path,:html => { class: "main-form max-WT-480 pb0",id: "change_password_page"},local: true  do |f| %>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="text" class="form-control" placeholder="Old Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "Old Password",id: "change_old_password",name: "user[change_old_password]" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="text" class="form-control" placeholder="New Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "New Password",id: "change_new_password",name: "user[change_new_password]" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="text" class="form-control" placeholder="Confirm Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "Confirm Password",id: "change_confirm_password",name: "user[change_confirm_password]" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-block btn-login btn-orrange">Update</button>
+                </div>
+              </div>
+            <!-- </form> -->
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--logout-->
+ <div class="modal fade common-modal" id="logoutModal">
+    <div class="modal-dialog max-WT-500">
+      <div class="modal-content">
+        <div class="modal-body  text-center">
+          <div class="row align-items-center modal_flax_height2">
+            <div class="col">
+              <div class="modal-inner-content">
+                <div class="main-form text-center no-bg">
+                  <img src="/assets/logout-icon.png" class="wt-30" alt="">
+                  <p class="logout-text mt40">Are you sure you want to Logout ?</p>
+                  <div class="button-block mt30">
+                    <div class="text-center modal-button">
+                      <a class="btn btn-common grey max-WT-120 mr5 yes" >Yes</a>
+                      <a class="btn btn-common blue max-WT-120" data-dismiss="modal">No</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</body>
+</html>
+
+<script type="text/javascript">
+
+     $(document).on('click','.yes',function(){
+     window.location.href = "/sessions/logout"
+
+     });
+      $(document).click(function(){
+       $("#change_password_page").validate({
+     
+      errorPlacement: function (error, element) {
+       error.insertAfter(element);
+       },
+        rules: {
+         "user[change_old_password]":{
+          required: true,
+          maxlength: 30,
+          minlength: 6
+        },
+        "user[change_new_password]":{
+          required: true,
+          maxlength: 20,
+          minlength: 6
+        },
+        "user[change_confirm_password]":{
+          required: true,
+          maxlength: 20,
+          equalTo: "#change_new_password"
+        }
+         
+      },
+     
+      messages: {
+
+        "user[change_old_password]":{
+          required: "This field is required",
+          minlength: "Password should not be less than 6 characters",
+          maxlength: "Password should not be more than 20 characters"
+
+        },
+       
+        "user[change_new_password]":{
+          required: "This field is required",
+          minlength: "Password should not be less than 6 characters",
+          maxlength: "Password should not be more than 20 characters"
+         
+
+        },
+        "user[change_confirm_password]":{
+          required: "This field is required"
+        }
+
+      }
+     });
+    });
+
+
+  </script>

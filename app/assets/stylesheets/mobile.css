@@ -1,0 +1,444 @@
+
+@media(min-width:576px){
+  .input-field, .trans_details{width:calc(50% - 5px);}
+}
+
+
+@media(min-width:768px) and (max-width:1023px) {
+  /*.banner_head h2{font-size: 28px;}*/
+  /*.banner_head p{font-size:18px;}*/
+
+}
+
+@media(min-width:1024px) and (max-width:1279px) {
+  .banner_head h2{font-size:30px;}
+}
+
+@media (max-width:1680px) {
+  .innovative_companies_slider {min-width:1024px;}
+}
+
+@media (max-width:1440px) {
+  .invest_box{padding:15px 20px;}
+  .innovative_companies_slider {min-width:900px;}
+
+
+
+  .wallet_amount_left{width:40%;}
+  .top_wallet_amount{padding-left:0px;}
+  .banner-left-bottom{margin-top:0;}
+  .slidee-box{margin-top:0;}
+  .invest_box
+
+}
+@media (max-width:1366px) {
+  .container-common{max-width:1200px;}
+  .innovative_companies_slider {min-width:850px;}
+  .innovative_companies_slider .slick-prev {
+    top:auto; bottom:0px;
+  }
+  .innovative_companies_slider .slick-next {
+    top:auto; bottom:0px;
+  }
+
+  .tab_with_swap.multiple-tab .global-tab.nav.nav-tabs li {
+    padding-right:10px;
+  }
+  .formintab .field-box .label-exchange.min-WT-100{min-width:75px!important;}
+  .banner-left-block{padding:0 30px 0 50px}
+  .slidebox .coin-box img{height:90px;}
+}
+@media (max-width:1280px) {
+  /*.global-tab.nav.nav-tabs li a{    font-size: 12px;}*/
+  .innovative_companies_slider {min-width:800px;}
+  .banner_head {margin-bottom: 10px;padding-top: 10px;}
+  .banner_head h2{font-size:22px;}
+  .tab_with_swap.multiple-tab .global-tab.nav.nav-tabs li a{font-size:12px;}
+
+  /*shubham*/
+  .table-block-section .col-md-4{padding:0 20px}
+  .footer-content ul li a{font-size:13px}
+  .banner-left-block{padding:0 30px 0 20px}
+  .banner-left-block .banner_head{padding-left:10px;}
+  /*.banner-left-bottom{margin-top:0px;}*/
+  .wallet_section{padding:15px 0px;}
+  .wallet_type_list{padding: 0 0 0 10px; font-size:0;}
+  .wallet_type_list li img{width:50px; height:50px;}
+
+}
+
+@media (max-width:1200px) {
+  .container-common{max-width:991px;}
+  .innovative_companies_slider {min-width:750px;}
+  .formintab{padding:0;}
+  .tab_with_swap.multiple-tab .global-tab.nav.nav-tabs{padding: 0 15px;}
+  .wallet_amount_left, .wallet_amount_right {
+    width: 100%;
+    display: block; border-right:none;
+  }
+  .wallet_amount_right{margin-top:15px;}
+  .wallet-coin{vertical-align:top; position:relative; top:25px;}
+}
+
+@media (max-width:1199px) {
+  .table-block-section .col-md-4{padding:0 10px}
+  .footer-content{padding-left:0px}
+  header.header-bg > nav {position: relative; padding: 5px 15px;}
+  header > nav {position: relative; padding: 15px 15px;}
+  .logo{max-width:200px;}
+  .innovative_companies_section{padding:30px 0px;}
+  .innovative_companies_slider {min-width:100%;}
+  .innovative_companies_slider .slick-prev {
+    top:0; left:15px; bottom:auto;
+  }
+  .innovative_companies_slider .slick-next {
+    top:0; left:65px; bottom:auto;
+  }
+  footer{padding:15px 0px 5px;}
+  .footer-top{padding:0;}
+  .footer-bottom{padding:20px 10px;}
+  .foot-logo{margin-bottom:5px;}
+  .fotter-left-text{margin-bottom:8px;}
+  .footer-top .col-xl-3{border-bottom:1px solid #fff; padding-bottom:20px; margin-bottom:30px;}
+
+  .system-block{padding:0 10px}
+  .invest_box{padding:10px;}
+  .aboutCrypto{padding-left:0px;}
+
+  .formintab .field-box{flex-wrap:wrap; margin-top:5px;}
+  /*.formintab .field-box .label-exchange.min;-WT-100{min-width:100%!important;}
+  .formintab .field-box .max-WT-140{
+    max-width:100%; margin-right:0!important; margin-bottom:5px;
+  }*/
+  .main-content.common-main.exchange-page{padding-top:18px;}
+  .chart_box{margin-bottom:0px;}
+  .chart_plan_common_style,.common_account_limit_style{padding:0 3px;}
+  .right_exchange_box{padding:0 3px;}
+  .exchange_card{margin-bottom:6px;}
+  .exchange_card.right_card.mb10{margin-bottom:6px!important;}
+  .exchange-tabbox{min-height:280px;}
+
+
+  .chart_plan_common_style{width:100%;}
+  .common_account_limit_style{width:100%;}
+  .left_exchange_top_box .right_exchange_inner{
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content:space-between;
+  }
+  .left_exchange_top_box .right_exchange_inner .exchange_card{
+    width:calc(50% - 3px);
+  }
+  .exchange-form {padding: 33px 0; }
+
+  .right_exchange_box{width:100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content:space-between;
+  }
+  .right_exchange_box .exchange_card.right_card{
+    width:calc(50% - 3px);
+  }
+  .right_exchange_box .exchange_card.right_card table.trade-table tbody{height: 406px;}
+  .chart_plan_common_style, .common_account_limit_style{margin-top:0px;}
+  .main-content.common-main.exchange-page {
+    padding-top: 24px;
+  }
+  .exchange-tabcontent.market-tabbox {
+    padding: 0px;
+  }
+  .coin-main{padding:0;}
+  .coin-card{margin-right:15px; min-height:80px;}
+  .coin-card img{width:35px;}
+  .wallet_box_right {width: calc(100% - 320px); padding: 0 0px 0 15px; float: right; }
+  .content-middle.withdraw-content-middle{max-width:100%;}
+  .withdraw-content-middle .middle-box{padding:0;}
+  .withdraw-content-middle .middle-header{padding:25px 10px 10px 10px}
+  .main-form{padding:25px 10px;}
+  .top_wallet_amount{margin-bottom:25px;}
+}
+
+@media (max-width: 1024px) {
+  header{min-height:70px;}
+  .create-inner-list li{width: calc(33.3% - 3px);margin:0 0 40px}
+}
+
+@media (max-width: 991px) {
+  .container-common{max-width:767px;}
+  body.loged header{padding-right:0px;}
+  header > nav {padding-right:50px; }
+  header.header-bg > nav {padding-right:50px;}
+  .mob-menu{display:block;}
+  .close-menu{display:block;}
+  .menu{opacity:0; visibility:hidden; backface-visibility:hidden; position:fixed; top:0px; right:0px; margin-right:-100%; background:#fff; padding-top:50px; width:300px; height:100vh; overflow:hidden; overflow-y:auto; z-index:1; transition:400ms;}
+  .menu ul li {display:block; padding:15px 20px; border-bottom:1px solid #d8d8d8; }
+  .menu ul li a{color:#122c54;}
+  .menu-slide{margin-right:0; opacity:1; visibility:visible; backface-visibility:visible; transition:400ms;}
+  .footer-content{padding-left:0px}
+  .social-manu{text-align:center; margin-bottom:15px;}
+  .copy-right-text{text-align:center;}
+  .copy-right-text p{margin-top:10px;}
+  .footer-top .col-xl-3{margin-bottom:20px;}
+  .footer-bottom{margin-top:15px;}
+
+  header{min-height:auto;}
+  .system-block{padding:0 0px}
+  .inner-content-block-s{padding:10px }
+  .legal_security_box h4{font-size:16px}
+  .legal_security_box{padding-left:43px;margin:0 0 20px}
+  header.green-header > nav{height:50px;}
+  .banner-home {min-height:750px!important;}
+  .why_invest{margin-top:-120px;}
+  .banner-last-box span{font-size:14px;}
+  .banner-last-box span:nth-child(2):after{font-size:14px;}
+  .banner-last-box span:nth-child(2):before{font-size:14px;}
+  .benifit-block-common{margin-bottom:30px;}
+  .aboutCrypto-sec{padding-top:20px; padding-bottom:30px;}
+  .about-image{display:none;}
+  .howWork-block-common{margin-bottom:30px;}
+  .fourSec-box{flex-basis:50%;}
+  .footer-bottom{margin-top:0px;}
+  .form-card{padding:0px;}
+  .form-card .card-body{padding-bottom:10px;}
+
+  .dashboard .col-lg-8.pR5{padding-right:15px!important;}
+  .dashboard .col-lg-4.pL5{padding-left:15px!important;}
+
+  .start-trade .col-lg-9.pR10{padding-right:15px!important;}
+  .start-trade .col-lg-3.pL10{padding-left:15px!important;}
+
+  .trade-specification .col-lg-9.pR10{padding-right:15px!important;}
+  .trade-specification .col-lg-3.pL10{padding-left:15px!important;}
+
+  .trade-specification .main-form .form-group.pR10{width:100%; padding-right:0px!important;}
+  .trade-specification .main-form .form-group.mt30{margin-top:0px!important;}
+  .btn-common-trade.mr10{margin-right:5px!important;}
+
+  .wallet-panel{padding:15px;}
+  .wallet-panel-right{
+    -webkit-box-pack: start!important; -ms-flex-pack: start!important; justify-content: flex-start!important;
+  }
+
+  .wallet-form input.form-control.wt-250{
+    width:150px!important;
+  }
+  .main-content.common-main.exchange-page {
+    padding-top:0;
+  }
+  .exchange_content_block {
+    padding: 8px 3px 0px;
+  }
+  .withdraw-heading{min-height:50px; padding-top:30px;}
+  .main-content.common-main {padding-top: 54px; }
+
+  .wallet_box_left{float:none; width:100%;}
+  .wallet_box_right {width: 100%; padding: 0; float: none; margin-top:20px;}
+  .coin-main{margin-bottom:20px;}
+  .withdraw_coin_box.coin_box{margin-bottom:20px;}
+  .withdraw_coin_box.coin_box{padding:10px 15px;}
+
+  .withdraw-tabbody:after{content:''; display:table; clear:both;}
+  .withdraw-tabbody .padd0{float:left; width:50%;}
+  hr.wdtab-hr{display:none;}
+}
+
+@media (max-width:767px) {
+  body.loged header{padding-right:50px;}
+  .top_user_info{width: 67px;margin-left:10px;min-width:auto;padding-left:10px;}
+  .head-user-name{display:none;}
+  .banner-home{padding-bottom:120px;}
+  .banner_head h1{font-size:1.8rem;}
+  .why_invest_box{padding:30px 0px;}
+  .why_invest_box h2{font-size:1.5rem;}
+  .invest_box_wrap{flex-wrap:wrap;}
+  .invest_box{width:50%;}
+  .invest_box:nth-child(even){border-right:none;}
+  .why_invest{margin-bottom:0;}
+  .common-heading h2{font-size:26px;}
+  .howWork-block-common{margin-bottom:10px;}
+  .faq-sec{padding:15px 0;}
+  .faq-sec h1{font-size:2rem;}
+  .footer-top .col-xl-3{margin-bottom:10px;}
+
+  .banner-last-box span{flex-basis:100%;}
+  .banner-last-box span:nth-child(2){flex-basis:100%;}
+  .banner-last-box span:nth-child(2):before, .banner-last-box span:nth-child(2):after{content:'';}
+  .footer-content{margin-top:15px;}
+  .form-box{padding:20px;}
+  .footer-content ul li{width:calc(50% - 3px); margin:0 0 20px}
+  .footer-content ul li .inner-list-footer li{margin:0px;}
+    .footer-content ul li .footer-menuList li{margin:5px 0px;}
+  .footer-content ul li .footer-menuList li a{padding:0; }
+  .footer-heading{padding:0px 5px 5px 5px; margin:0 0 5px; font-size:20px;}
+  .address-box {padding-left:5px; padding-right:5px;}
+  .footer-content ul li .footer-menuList{padding-left:5px;}
+  .subscription-footer{padding-left:5px;}
+  .footer-content ul li:last-child{width:100%;}
+  .social-manu.text-right{text-align:center!important;}
+  header > nav{ background: #1060ac; padding:5px 50px 5px 10px;}
+  header.header-bg > nav{padding-left:10px;}
+  .currancy-block-common {margin:0 0 20px}
+  .trade-main-sec{padding:0px}
+  .currancy-block-common {margin:0 0 20px}
+  .trade-main-sec{padding:0px}
+  .btn-user{width:42px; height:42px;}
+  .main-form{padding:15px 8px;}
+  .main-content.common-main{padding-top:45px;}
+  .inner-common-heading{padding:20px 0 35px 0; min-height:100px;}
+  .profile-imgbox{margin-left:auto; margin-right:auto;}
+  .profile-detail{text-align:center; margin:10px auto;}
+  .w-100.text-right{text-align:center!important;}
+  .wallet-form select.form-control,
+  .wallet-form input.form-control{
+    width:120px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .btn-logSign{padding:5px 20px;}
+  
+  .exchange-tabcontent.market-tabbox{padding:0px;}
+
+  .byOrder-table>tbody>tr>td:nth-child(1){width:40%;}
+  .byOrder-table>tbody>tr>td:nth-child(2){width:40%;}
+  .byOrder-table>thead>tr>th:nth-child(1){width:40%;}
+  .byOrder-table>thead>tr>th:nth-child(2){width:40%;}
+  .tab_with_swap.multiple-tab .global-tab.nav.nav-tabs li a{padding: 10px 3px;}
+  .banner-left-block {
+    padding: 0;
+  }
+  .coin-card h2{font-size:26px;}
+  .coin-card img{width:30px;}
+  .coin_field{width:175px;}
+  .withdraw-heading {padding-top:25px; padding-bottom:25px;}
+}
+
+@media (max-width:640px) {
+  
+}
+
+@media (max-width:576px) {
+  .btn-logSign{margin-left:0px; padding:3px 12px;}
+  header > nav > .logo{max-width:60px;}
+  header.header-bg > nav > .logo{max-width:50px;}
+  .logo img.mobile-logo {display: block; }
+  .logo img.desktop-logo{display:none;}
+  .why_invest_box{padding:20px 10px;}
+  .time_main{padding:5px;}
+  .count-block span{width:30px; height:70px; line-height:70px; font-size:45px;}
+  .benifit-block-common{margin-bottom:15px;}
+  .roadmap-filter-box ul li a{width:70px;}
+  .faq-sec{padding:20px 0;}
+  .faq-sec h1{font-size:1.8rem;}
+  .fourSec-box{flex-basis:100%;}
+  .fourSec-box-text{max-width:100%;}
+  .footer-bottom {padding:20px 10px 0px 10px;}
+  .form-card .card-body{padding:15px 10px 10px 10px; padding-bottom:5px;}
+
+  .form-box{padding:20px 10px;}
+  .copy-right-text p{font-size:12px;text-align:center;}
+
+
+  /*.logo {max-width:50px;}*/
+  .modal-button .btn.mr5{margin-bottom:10px;margin-right:0px!important}
+  .btn.halfwidth{width:100%}
+  .halfwidth+.halfwidth{margin-left:0px}
+  .share-feedback-form{display:block!important}
+  .share-feedback-form .feedback-block{width:100%;}
+  .common-modal .modal-content{padding:10px}
+  .authBox{flex-wrap:wrap; text-align:center; padding:8px 0; border-radius:8px;}
+  .authBox strong, .authBox p{display:block; width:100%;}
+  label.switchTheme{margin:5px auto 0 auto;}
+  .table-common-heading.d-flex.max-WT-400{
+    flex-wrap:wrap!important; text-align:center;
+  }
+  .table-common-heading.d-flex.max-WT-400 h3{width:100%;}
+  .btn-upload-doc{margin:0 auto; min-width:100%;}
+
+  .wallet-form .form-group{width:calc(50% - 10px);}
+  .wallet-form .form-group:last-child{width:calc(100% - 10px);}
+  .wallet-form select.form-control,
+  .wallet-form input.form-control{
+    width:100%;
+  }
+  .wallet-form input.form-control{
+    margin-top:25px;
+  }
+  .wallet-form input.form-control.wt-250{
+    width:100%!important; margin-top:10px;
+  }
+
+  .left_exchange_top_box .right_exchange_inner{
+    flex-wrap:wrap;
+  }
+  .left_exchange_top_box .right_exchange_inner .exchange_card{
+    width:100%;
+  }
+  .exchange-form {padding: 33px 0; }
+
+  .right_exchange_box{
+    flex-wrap:wrap;
+  }
+  .right_exchange_box .exchange_card.right_card{
+    width:100%;
+  }
+  .global-tab.nav.nav-tabs li a{padding:10px 3px;}
+
+  .withdraw-content-middle .middle-block{padding:0px 5px;}
+  .input_inline_field li{margin-left:0;}
+  .input_inline_field li:first-child{display:block;}
+  .input_inline_field li:nth-child(3){margin:0px 5px;}
+
+  .coin-main.d-flex{display:block!important;}
+  .coin-card{width:100%; margin:10px 0;}
+  .withdraw_coin_box .coin_name{padding-left:10px;}
+  .coin_chart2{width:100px;}
+  .withdraw-tabbody .padd0{float:none; width:100%;}
+  hr.wdtab-hr{display:block;}
+  .withdraw-tabcontent{padding:0;}
+  .deposit_address{padding:10px;}
+  .btc_link{position:static;}
+  .wallet_section{padding:5px 0 ;}
+  .btc-details-list li span {font-size: 12px; }
+  .btn.btn_copy {display:block; background:#ffff; position:static; border-left:0; margin:10px auto 0px auto; width:130px; height:38px;}
+  .inner-content-block-s{margin:0;}
+  .Prevw-box{width:100px;}
+  .imgPrevw-box{width:100px; height:100px;}
+  .upload-doc{margin:0;}
+}
+
+@media (max-width:480px) {
+  .form-box{padding:20px 0px;}
+  /*shubham*/
+  .create-inner-list li{width:100%;margin:0 0 20px;padding:0px}
+  .formintab .field-box .label-exchange.min-WT-100{min-width:100%!important;}
+  .formintab .field-box .max-WT-140{max-width:calc(50% - 5px)!important;}
+  .input_inline_field li{display:block;}
+  .coin_field{width:100%;}
+  .chart_img{width:120px; display:block; margin:0 auto; float:none;}
+  .wallet-coin {position: static; display: block; margin: 0 auto; }
+  .wallet_amount {float: none; width: 100%; margin-top: 10px; }
+  .wallet_type_list{padding: 0; font-size: 0; text-align: center; margin-bottom: 15px; }
+  .coin_icon{width:35px;}
+  .coin_name h5{font-size:14px;}
+  .coin_name p{font-size:12px;}
+  .coin_price{font-size:14px;}
+  .top_wallet_amount{margin-bottom:8px;}
+  .wallet_box_right{margin-top:10px;}
+  div.withdraw_space_top + div.withdraw_space_top{margin-top:10px;}
+  .coin_chart{width:60px;}
+  .coin_box{padding:5px 10px; min-height:60px; margin-bottom:8px;}
+  .kyc_form_box{padding:15px 5px;}
+}
+
+@media (max-width:414px) {
+  .banner-home{min-height:340px;}
+  .invest_box{width:100%;}
+  .invest_box{border:none; border-bottom:1px solid #d7d7d7; margin:0;}
+  .invest_box:last-child{border-bottom:none;}
+  .count-block span{width:22px; height:60px; line-height:60px; margin:0 1px!important; font-size:32px;}
+  .count-block:after{right:-11px; font-size:36px;}
+  .roadmap-filter-box ul{height:50px;}
+  .roadmap-filter-box ul li{margin-top:-15px;}
+  .roadmap-filter-box ul li a {width:40px; font-size:13px; height:80px;}
+  .registerToken h3{font-size:1.4rem; margin:5px 0;}
+  .footer-content ul li{width:100%;}
+  .footer-bottom {padding:20px 0px 10px 0px;}
+  .social-manu a{width:28px; height:28px; font-size:16px;}
+}
+

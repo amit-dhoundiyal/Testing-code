@@ -1,0 +1,24 @@
+   <!DOCTYPE html>
+<html>
+  <head>
+    <title>CreateEthereum</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': true %>
+    <%= alertify_flash(wait: 20) %>
+  </head>
+
+  <body>
+    <% if current_page?(root_path) && current_user.present? %>
+    <%= render 'layouts/header' %>
+    <% elsif current_user.present? %>
+    <%= render 'layouts/header' %>
+    <% elsif !current_user.present? %>
+    <%= render 'layouts/home_header' %>
+    <% end %>
+    <%= yield %>
+    
+    <%= render "layouts/footer" %>
+  </body>
+</html>

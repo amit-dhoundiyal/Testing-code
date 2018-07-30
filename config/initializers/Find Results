@@ -1,0 +1,62 @@
+Searching 3748 files for "+91"
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/homes/index.html.erb:
+  601                  <div class="col-md-12 d-flex">
+  602                    <div class="country-code">
+  603:                   <%= f.collection_select(:mobile_code, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ c.country_code, "#{c.name}  +#{c.country_code}" ] }, :first, :last, {include_blank: 'Code},class: "form-control select_style2") %>
+  604                     <!--  <select class="form-control select_style2">
+  605:                      <option selected>+91</option>
+  606                       <option >+123</option>
+  607                       <option>+212</option>
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/static_contents/about_us.html.erb:
+  162                  <div class="col-md-12 d-flex">
+  163                    <div class="country-code">
+  164:                   <%= f.collection_select(:mobile_code, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ c.country_code, "#{c.name}  +#{c.country_code}" ] }, :first, :last, {include_blank: Code},class: "form-control select_style2") %>
+  165                     <!--  <select class="form-control select_style2">
+  166:                      <option selected>+91</option>
+  167                       <option >+123</option>
+  168                       <option>+212</option>
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/static_contents/contact.html.erb:
+  151                  <div class="col-md-12 d-flex">
+  152                    <div class="country-code">
+  153:                   <%= f.collection_select(:mobile_code, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ c.country_code, "#{c.name}  +#{c.country_code}" ] }, :first, :last, {include_blank: 'Code},class: "form-control select_style2") %>
+  154                     <!--  <select class="form-control select_style2">
+  155:                      <option selected>+91</option>
+  156                       <option >+123</option>
+  157                       <option>+212</option>
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/users/address.html.erb:
+  136                  <div class="col-md-12 d-flex">
+  137                    <div class="country-code">
+  138:                   <%= f.collection_select(:mobile_code, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ c.country_code, "#{c.name}  +#{c.country_code}" ] }, :first, :last, {include_blank: 'Code},class: "form-control select_style2") %>
+  139                     <!--  <select class="form-control select_style2">
+  140:                      <option selected>+91</option>
+  141                       <option >+123</option>
+  142                       <option>+212</option>
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/users/buy_token.html.erb:
+  198                    <div class="country-code">
+  199                      <select class="form-control select_style2">
+  200:                      <option selected>+91</option>
+  201                       <option >+123</option>
+  202                       <option>+212</option>
+  ...
+  279                    <div class="country-code">
+  280                      <select class="form-control select_style2">
+  281:                      <option selected>+91</option>
+  282                       <option >+123</option>
+  283                       <option>+212</option>
+
+/home/mobiloitte/createethereumsmartcontracts-18043211-ror/app/views/users/profile.html.erb:
+   58                                <span class="input-group-text">
+   59                                  <select class="form-control select-custome">
+   60:                                   <option>+91</option>
+   61:                                   <option>+91</option>
+   62:                                   <option>+91</option>
+   63:                                   <option>+91</option>
+   64                                  </select>
+   65                                </span>
+
+14 matches across 6 files
