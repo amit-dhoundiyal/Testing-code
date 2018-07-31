@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+label.error{
+    color: red !important;
+    font-weight: normal !important;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="main-content">
+    <div class="inner-banner d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-12">
+              <div class="banner-inner-text">
+                <h3>The blockchain-based marketplace for digital content</h3>
+                <p>Buy and Sell Bitcoins & other blockchain assets with Crypto Wallet</p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-content-mainblock">
+      <div class="container-common">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="inner-content-block-s p0">
+              <div class="staticcontent-block">
+                <h2 class="about_sec_head">Token Policy</h2>
+                <p class="common-paragraph">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="common-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="common-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="common-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="common-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="common-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<!-- Modal Login Signup -->
+  <div class="modal fade common-modal" id="loginModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-767" role="document">
+      <div class="modal-content">
+        <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+        <div class="modal-body custome-modla-body min-ht-450 d-flex align-items-center">
+          <div class="form-block p0 mb0">
+            <h3 class="modal_form_heading">Sign In to your account</h3>
+            <!-- form class="main-form max-WT-480 pb0"> -->
+            <%= form_with scope: :user,url: sessions_path,:html => { class: "main-form max-WT-480 pb0",id: "login_page"},local: true  do |f| %>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="text" class="form-control" placeholder="Email ID"> -->
+                  <%= f.email_field :email, class: 'form-control',placeholder: "Email",id: "login_email" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="password" class="form-control" placeholder="Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "password",id: "login_password" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-6">
+                 <!--  <label class="checkbox-design"> -->
+                    <!-- <input type="checkbox" name=""> -->
+                    <%= f.check_box :remember_me, class: 'checkbox-design' %>
+                    <span></span>Remember me
+                  <!-- </label> -->
+                </div>
+                <div class="col-lg-6 text-right">
+                  <a href="#forgotPassword" class="forgot-pass"  data-dismiss="modal" data-toggle="modal">forgot Password?</a>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-block btn-login">Login</button>
+                </div>
+              </div>
+              
+              <div class="form-group row mb0">
+                <div class="col-md-12">
+                  <div class="dont-account">
+                    <p>Don’t have account yet? <a href="#signupmodal" class="link-signup" data-toggle="modal" data-dismiss="modal">Create New Account</a></p>
+                  </div>
+                </div>
+              </div>
+            <!-- </form> -->
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+<!-- signup-modal -->
+  <div class="modal fade common-modal" id="signupmodal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-767" role="document">
+      <div class="modal-content">
+        <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+        <div class="modal-body custome-modla-body min-ht-450 d-flex align-items-center">
+          <div class="form-block p0 mb0">
+            <h3 class="modal_form_heading">Register Now</h3>
+            <!-- <form class="main-form max-WT-480 pb0"> -->
+            <%= form_with scope: :user,url: users_path,:html => {class: "main-form max-WT-480 pb0",id: "signup_page"},local: true  do |f| %>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <%= f.text_field :name, class: 'form-control',placeholder: "Name",id: "signup_name" %>
+                  <!-- <input type="text" class="form-control" placeholder="Name"> -->
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="email" class="form-control" placeholder="Email"> -->
+                  <%= f.email_field :email, class: 'form-control',placeholder: "Email",id: "signup_email" %>
+                </div>
+              </div>
+              <div class="form-group row number-block">
+                <div class="col-md-12 d-flex">
+                  <div class="country-code">
+                  <%= f.collection_select(:mobile_code, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ c.country_code, "#{c.name}  +#{c.country_code}" ] }, :first, :last, {include_blank: 'code'},class: "form-control select_style2") %>
+                   <!--  <select class="form-control select_style2">
+                     <option selected>+91</option>
+                     <option >+123</option>
+                     <option>+212</option>
+                   </select> -->
+                  </div>
+                  <!-- <input type="text" class="form-control" placeholder="Mobile No."> -->
+                  <%= f.telephone_field :mobile_no, class: 'form-control',placeholder: "Mobile No.",id: "signup_mobile" %>
+                </div>
+              </div>
+             <div class="form-group row">
+                <div class="col-md-12">
+                  <%= f.collection_select(:country_name, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ "#{c.name}" ] }, :first, :last, {include_blank: 'Select Country '},class: "form-control select_style2") %>
+                 <!--  <select class="form-control select_style2">
+                     <option selected>Country Name</option>
+                     <option >India</option>
+                     <option>Country Name</option>
+                  </select> -->
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="password" class="form-control" placeholder="Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "Password",id: "signup_password" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <!-- <input type="password" class="form-control" placeholder="Confirm Password"> -->
+                  <%= f.password_field :password, class: 'form-control',placeholder: "Confirm Password",id: "signup_confirm_password",name: "user[confirm_password]" %>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <label class="checkbox-design">
+                    <input type="checkbox" name="">
+                    <span></span>I have read the <a class="terms-anchor" href="terms.html">Terms and Conditions</a>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-block btn-login btn-orrange">Sign Up</button>
+                </div>
+              </div>
+              
+              <div class="form-group row mb0">
+                <div class="col-md-12">
+                  <div class="dont-account">
+                    <p>Already have an account? <a href="#loginModal" class="link-signup" data-toggle="modal" data-dismiss="modal">Sign In</a></p>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- forgot-password -->
+  <div class="modal fade common-modal" id="forgotPassword" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-767" role="document">
+      <div class="modal-content">
+          <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+         <div class="modal-body custome-modla-body min-ht-450 d-flex align-items-center">
+          <div class="form-block p0 mb0 text-center">
+             <img src="/assets/lock-img.png" class="forgot-img" alt="">
+            <form class="main-form max-WT-480 pb0 ">
+              <h3 class="modal_form_heading grey-text">Forgot Password?</h3>
+              <p class="mb40 modal-text mt5">Don’t worry about  your password .Please enter your registered mobile number. We will send you code to rest it.</p>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Enter your register emaill id">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-block btn-login btn-orrange" data-dismiss="modal" data-toggle="modal" data-target="#forgotValModal">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- forgot-password-validation --> 
+  <div class="modal fade common-modal" id="forgotValModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-767" role="document">
+      <div class="modal-content">
+          <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+         <div class="modal-body custome-modla-body min-ht-450 d-flex align-items-center">
+          <div class="form-block p0 mb0 text-center">
+             <img src="/assets/lock-img.png" class="forgot-img" alt="">
+            <form class="main-form max-WT-480 pb0 text-left">
+              <h3 class="modal_form_heading grey-text">Forgot Password?</h3>
+              <p class="mb40 modal-text mt5">Don’t worry about  your password .Please enter your registered mobile number. We will send you code to rest it.</p>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control error-field" placeholder="Enter your register emaill id">
+                  <span class="error-msg">Please enter a valid email address</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-block btn-login btn-orrange" data-dismiss="modal" data-toggle="modal" data-target="#forgotValModal">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Change-password -->
+  <div class="modal fade common-modal" id="changePassword" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered max-WT-600" role="document">
+      <div class="modal-content">
+          <button type="button" class="close modal-cross" data-dismiss="modal" aria-label="Close">
+          <img src="/assets/cross-icon.png" alt="Cross">
+        </button>
+         <div class="modal-body custome-modla-body min-ht-300 d-flex align-items-center">
+          <div class="form-block p0 mb0 text-center">
+            <h3 class="modal_form_heading">Change Password</h3>
+            <form class="main-form max-WT-480 pb0">
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Old Password">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="New Password">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Confirm Password">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-block btn-login btn-orrange" data-dismiss="modal" data-toggle="modal" data-target="#forgotValModal">Update</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+      $(document).click(function(){ 
+       $("#login_page").validate({
+     
+      errorPlacement: function (error, element) {
+       error.insertAfter(element);
+       },
+        rules: {
+         "user[email]":{
+          required: true,
+          maxlength: 30,
+          email: true
+        },
+        "user[password]":{
+          required: true,
+          maxlength: 20,
+          minlength: 6
+        }
+         
+      },
+     
+      messages: {
+
+        "user[email]":{
+          required: "This field is required",
+          minlength: "Password should not be more than 6 characters",
+          maxlength: "Email should not be more than 30 characters"
+
+        },
+       
+        "user[password]":{
+          required: "This field is required",
+          minlength: "Password should not be more than 6 characters",
+          maxlength: "Password should not be more than 20 characters"
+         
+
+        }
+      }
+     });
+    });
+
+
+  </script>
+  <script type="text/javascript">
+    
+     $(document).click(function(){
+       $("#signup_page").validate({
+     
+      errorPlacement: function (error, element) {
+   error.insertAfter(element);
+   },
+    rules: {
+    "user[name]":{
+      required: true,
+      minlength: 3,
+      maxlength: 30
+     
+    },
+
+    "user[email]":{
+      required: true,
+      maxlength: 30,
+      email: true
+    },
+    "user[password]":{
+      required: true,
+      maxlength: 20,
+      minlength: 6
+    },
+    "user[confirm_password]":{
+      required: true,
+      maxlength: 20,
+      equalTo: "#signup_password"
+    },
+    "user[mobile_no]":{
+      required: true,
+      minlength: 8,
+      maxlength: 15
+    },
+    "user[mobile_code]":{
+      required: true
+     },
+    "user[country_name]":{
+      required: true
+    }
+
+     
+  },
+ 
+  messages: {
+    "user[name]":{
+      required: "This field is required",
+      minlength: "Name should not be more less 3 characters",
+      maxlength: "Name should not be more than 30 characters"
+     
+    },
+    "user[email]":{
+      required: "This field is required",
+      minlength: "Password should not be less than 6 characters",
+      maxlength: "Email should not be more than 30 characters"
+
+    },
+    "user[password]":{
+      required: "This field is required",
+      minlength: "Password should not be less than 6 characters",
+      maxlength: "Password should not be more than 20 characters"
+     
+
+    },
+    "user[confirm_password]":{
+      required: "This field is required",
+      minlength: "Password should not be less than 6 characters",
+      maxlength: "Password should not be more than 20 characters"
+     
+
+    },
+    "user[mobile_no]":{
+      required: "This field is required",
+      minlength: "Mobile Number should not be less than 8 digits",
+      maxlength: "Mobile Number should not be more than 15 digits"
+    },
+    "user[mobile_code]":{
+      required: "This field is required"
+     },
+    "user[country_name]":{
+      required: "This field is required"
+    }
+  }
+ });
+});
+</script>

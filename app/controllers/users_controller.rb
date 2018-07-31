@@ -34,7 +34,6 @@ class UsersController < ApplicationController
 
 	
 	def address
-      
 	end 
 
 	

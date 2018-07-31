@@ -8,7 +8,7 @@ ActiveAdmin.register User  do
 		remove_filter :mobile_code
 		remove_filter :country_name
 		remove_filter :is_block
-		menu priority: 1
+		menu priority: 4
 		
 
 		actions :all 
@@ -36,8 +36,7 @@ ActiveAdmin.register User  do
              
            end
 
-		end
-
+		end   
 
 		controller do
 		   def block

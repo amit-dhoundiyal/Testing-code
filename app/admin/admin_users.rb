@@ -26,5 +26,14 @@ ActiveAdmin.register AdminUser do
       end
       f.actions
     end
+    
+    collection_action :dashboard, :method => :get do
+    
+    end
+
+    collection_action :token_details, :method => :get do
+    
+    end
+
 
 end

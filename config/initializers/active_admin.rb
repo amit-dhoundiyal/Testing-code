@@ -240,19 +240,15 @@ ActiveAdmin.setup do |config|
   #
   # To disable/customize for the :admin namespace:
   #
-  #   config.namespace :admin do |admin|
-  #
-  #     # Disable the links entirely
-  #     admin.download_links = false
-  #
-  #     # Only show XML & PDF options
-  #     admin.download_links = [:xml, :pdf]
-  #
-  #     # Enable/disable the links based on block
-  #     #   (for example, with cancan)
-  #     admin.download_links = proc { can?(:view_download_links) }
-  #
-  #   end
+    config.namespace :admin do |admin|
+  
+     admin.build_menu :default do |menu|
+       menu.add label: "Dashboard", url: "/admin/admin_users/dashboard",priority: 1
+       menu.add label: "Token Details", url: "/admin/admin_users/token_details",priority: 2
+
+     end
+  
+    end
 
   # == Pagination
   #

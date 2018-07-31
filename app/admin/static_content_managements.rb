@@ -4,6 +4,7 @@ ActiveAdmin.register StaticContentManagement do
 
 	remove_filter :created_at
 	remove_filter :updated_at
+	menu priority: 6
     
 	index do
 		   

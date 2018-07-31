@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_30_114609) do
+ActiveRecord::Schema.define(version: 2018_07_31_094457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,17 @@ ActiveRecord::Schema.define(version: 2018_07_30_114609) do
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
+  create_table "payments", force: :cascade do |t|
+    t.integer "transaction_id"
+    t.integer "tokens"
+    t.float "amount"
+    t.string "transaction_status"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_payments_on_user_id"
+  end
+
   create_table "static_content_managements", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -84,4 +95,5 @@ ActiveRecord::Schema.define(version: 2018_07_30_114609) do
     t.string "file"
   end
 
+  add_foreign_key "payments", "users"
 end
