@@ -1,6 +1,10 @@
-ActiveAdmin.register WhitePaper do
+ActiveAdmin.register WhitePaper do 
 	permit_params :title,:description,:file
 	menu priority: 2
+	remove_filter :created_at
+    remove_filter :updated_at
+    remove_filter :file
+	remove_filter :image
 
 
 
@@ -8,7 +12,7 @@ ActiveAdmin.register WhitePaper do
 		   f.inputs do
 		     f.input :title
 		     #f.file_field :file
-		     f.input :file, :as => :file,:hint => image_tag(f.object.file.url(:thumb))
+		     f.input :file, :as => :file
 		     f.input :description,:as => :ckeditor
 		   end
 		   f.actions
@@ -19,24 +23,29 @@ ActiveAdmin.register WhitePaper do
 	      row :title
 	      row :description
 	      row :Image do
-	          image_tag(white_paper.try(:file).try(:url),size: "150x150")
+	          image_tag(white_paper.try(:file).try(:url),size: "250x250")
 	    end 
       end
     end
+    
 
+    index do
+    	selectable_column
+		   id_column
+		   column :title
+		   column :description
+		  
+		   
+		column :actions do |i|
+		           links = []
+		           links << link_to('View', admin_white_paper_path(i.id))
+		           links << link_to('Edit',edit_admin_white_paper_path(i.id))
+		           links << link_to('Delete', admin_white_paper_path(i.id),method: :delete ,data: { confirm: 'Are you sure you want to delete ?' })
+		           links.join(' ').html_safe
+		             
+		          
 
-
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-# permit_params :list, :of, :attributes, :on, :model
-#
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+		end
+	end
 
 end

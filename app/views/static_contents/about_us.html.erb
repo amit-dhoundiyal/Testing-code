@@ -146,6 +146,7 @@ label.error{
               </div>
              <div class="form-group row">
                 <div class="col-md-12">
+                  <%= f.collection_select(:country_name, ISO3166::Country.countries.sort_by(&:name).collect { |c| [ "#{c.name}" ] }, :first, :last, {include_blank: 'Select Country '},class: "form-control select_style2") %>
                  <!--  <select class="form-control select_style2">
                      <option selected>Country Name</option>
                      <option >India</option>
@@ -378,7 +379,10 @@ label.error{
     },
     "user[mobile_code]":{
       required: true
-     }
+     },
+    "user[country_name]":{
+      required: true
+    }
 
      
   },
@@ -417,7 +421,10 @@ label.error{
     },
     "user[mobile_code]":{
       required: "This field is required"
-     }
+     },
+    "user[country_name]":{
+      required: "This field is required"
+    }
   }
  });
 });

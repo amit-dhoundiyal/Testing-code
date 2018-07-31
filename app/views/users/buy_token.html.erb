@@ -445,7 +445,7 @@
                   <p class="logout-text mt40">Are you sure you want to Logout ?</p>
                   <div class="button-block mt30">
                     <div class="text-center modal-button">
-                      <a class="btn btn-common grey max-WT-120 mr5" href="login.html" >Yes</a>
+                      <a class="btn btn-common grey max-WT-120 mr5 yes"  >Yes</a>
                       <a class="btn btn-common blue max-WT-120" href="javascript:void(0);" data-dismiss="modal">No</a>
                     </div>
                   </div>
@@ -461,3 +461,11 @@
   
 </body>
 </html>
+
+<script type="text/javascript">
+
+     $(document).on('click','.yes',function(){
+     window.location.href = "/sessions/logout"
+
+     });
+</script>

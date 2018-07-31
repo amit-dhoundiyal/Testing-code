@@ -1,4 +1,4 @@
-ActiveAdmin.register User do
+ActiveAdmin.register User  do
 		permit_params :name, :email, :password_digest, :mobile_code, :mobile_no, :country_name
 		config.clear_action_items!
 		remove_filter :created_at
