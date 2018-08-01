@@ -11,11 +11,11 @@ ActiveAdmin.register User  do
         index do
 		   
 		   selectable_column
-		   id_column
-		   column :name
-		   column :email
-		   column :mobile_no
-		   column :country_name
+		   column :id, sortable: false
+		   column :name, sortable: false
+		   column :email, sortable: false
+		   column :mobile_no, sortable: false
+		   column :country_name, sortable: false
 
            column :actions do |i|
            links = []

@@ -29,9 +29,9 @@ ActiveAdmin.register WhitePaper do
 
     index do
     	selectable_column
-		   id_column
-		   column :title
-		   column :description
+		   column :id, sortable: false
+		   column :title, sortable: false
+		   column :description, sortable: false
 		  
 		   
 		column :actions do |i|

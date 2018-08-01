@@ -9,8 +9,8 @@ ActiveAdmin.register StaticContentManagement do
 		   
 		   selectable_column
 		   
-		   column :title
-		   column :description do |post|
+		   column :title, sortable: false
+		   column :description, sortable: false do |post|
              truncate(post.description,omision: "...",length: 100)
            end
 		   
