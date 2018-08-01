@@ -10,7 +10,7 @@ $current-menu-item-background: lighten($primary-color, 12%) !default;
 $hover-menu-item-background: lighten($primary-color, 12%) !default;
 $table-stripe-color: lighten($primary-color, 57%) !default;
 $table-selected-color: #d9e4ec !default;
-$error-color: #932419 !default;
+$error-color: #ff0000 !default;
 $blank-slate-primary-color: #AAA !default;
 $breadcrumbs-color: #8a949e !default;
 $breadcrumbs-separator-color: #aab2ba !default;
@@ -18,7 +18,7 @@ $required-field-marker-color: #aaa !default;
 $page-header-background-color: #5E6469 !default;
 
 // Text
-$text-color: #323537 !default;
+$text-color: 	#FF0000 !default;
 $link-color: #38678b !default;
 $header-dropdown-menu-text-color: #cdcdcd !default;
 $section-header-text-color: $primary-color !default;

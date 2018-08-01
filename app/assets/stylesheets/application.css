@@ -12,9 +12,6 @@
  *
 
 
- #session_new.error{
-	color: red;
- }
     *= require alertify
     *= require alertify/default
     *= require alertify/bootstrap
