@@ -8,7 +8,7 @@
                                  <legend align="center">No. of  Tokenss</legend>
                                  <img src="/assets/user.png" align="center" height="100px" width="100px">
                                  <h4 align="right"><%= "1234" %></h4>
-                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get,style: "margin-left: 34%;" %>                           </div>
+                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get %>                           </div>
                          </fieldset>
                        </div>
                    </div>
@@ -17,7 +17,7 @@
                    
 
 
-                   <div class="info-box-block" style= "margin-top: 10%;">
+                   <div class="info-box-block">
                      <div class="row">
                    <div class="col-md-3 col-sm-6">
                        <div class="info-box ">
@@ -27,21 +27,72 @@
                                  <legend align="center">Verified Users</legend>
                                  <img src="/assets/user.png" align="center" height="100px" width="100px">
                                  <h4 align="right"><%= "1234" %></h4>
-                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get,style: "margin-left: 34%;"  %>
+                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get  %>
                            </div>
                          </fieldset>
                        </div>
                    </div>
                    </div>
                    </div>
+                    <div class="info-box-block">
+                     <div class="row">
+                   <div class="col-md-3 col-sm-6">
+                       <div class="info-box ">
+                         <fieldset class="global-fieldset bg-yellow">
+                           <!-- <legend>Total Number of Users</legend> -->
+                           <div class=" info-txt">
+                                 <legend align="center">No. of Transactions</legend>
+                                 <img src="/assets/user.png" align="center" height="100px" width="100px">
+                                 <h4 align="right"><%= "1234" %></h4>
+                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get %>
+                           </div>
+                         </fieldset>
+                       </div>
+                   </div>
+                   </div>
+                   </div>
+                    <div class="info-box-block">
+                     <div class="row">
+                   <div class="col-md-3 col-sm-6">
+                       <div class="info-box ">
+                         <fieldset class="global-fieldset bg-yellow">
+                           <!-- <legend>Total Number of Users</legend> -->
+                           <div class=" info-txt">
+                                 <legend align="center">Total Revenue in ETH</legend>
+                                 <img src="/assets/user.png" align="center" height="100px" width="100px">
+                                 <h4 align="right"><%= "300000K" %></h4>
+                                 <%= button_to "View Details",  dashboard_admin_admin_users_path ,method: :get %>
+                           </div>
+                         </fieldset>
+                       </div>
+                   </div>
+                   </div>
+                   </div>
+  
+
 
                    <style type="text/css">
-                   .info-box-block{max-width:300px;margin:0 auto;}
+                  .global-fieldset{text-align:center;height: 287px;}
+                  #main_content{text-align:center;}
+                                     .info-box-block {
+                      display: inline-block;
+                      width: calc(33.3% - 40px);
+                      margin-right: 31px;margin-bottom:30px;}
                    .info-box legend{font-size:18px;}
                    h4{ font-size: 57px;margin: 20px 0px 10px;}h4 span{ padding-left: 20px;}
                     .info-box legend {    font-size: 24px;    margin: 10px 0;} 
                     h4 {
                        font-size: 57px;
-                       margin: -80px 88px 10px;
+                       margin:10px 0 ;text-align:center
                     }
+                    .info-txt img  {
+                          height: 86px;
+                          width: 85px;
+                       }
+                     .info-box {
+                      width: 300px;
+                     }
+                      .info-txt h4 {
+                        font-size: 30px !important;
+                      }
                    </style>
