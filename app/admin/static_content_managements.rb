@@ -3,7 +3,14 @@ ActiveAdmin.register StaticContentManagement do
 	config.clear_action_items!
 	menu priority: 6
 	config.filters = false
-
+    
+    form do |f|
+		   f.inputs do
+		     f.input :title,:input_html => { :readonly=>true }
+		     f.input :description,:as => :ckeditor
+		   end
+		   f.actions
+    end
     
 	index do
 		   
@@ -17,7 +24,6 @@ ActiveAdmin.register StaticContentManagement do
            
            column :actions do |i|
            links = []
-           links << link_to('View', admin_static_content_management_path(i.id))
            links << link_to('Edit', edit_admin_static_content_management_path(i.id))
 	     
            links.join(' ').html_safe
