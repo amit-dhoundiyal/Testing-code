@@ -1,10 +1,9 @@
 ActiveAdmin.register StaticContentManagement do
 	permit_params :title, :description
 	config.clear_action_items!
-
-	remove_filter :created_at
-	remove_filter :updated_at
 	menu priority: 6
+	config.filters = false
+
     
 	index do
 		   

@@ -36,6 +36,11 @@ class UsersController < ApplicationController
 	def address
 	end 
 
+	def address_save
+	  flash[:success]= "Your Address is Saved!"
+      redirect_to root_path
+	end
+
 	
 	def forgot_password
 	   if params[:user].present?

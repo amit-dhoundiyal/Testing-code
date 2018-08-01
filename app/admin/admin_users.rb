@@ -1,6 +1,9 @@
 ActiveAdmin.register AdminUser do
     menu false
+    config.clear_action_items!
     permit_params :email, :password, :password_confirmation
+    
+
 
     
     index do

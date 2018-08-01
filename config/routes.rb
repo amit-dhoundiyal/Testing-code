@@ -13,6 +13,9 @@ Rails.application.routes.draw do
       post 'forgot_password'
       get 'profile'
       post 'change_password'
+      post 'address_save'
+
+      
     end
   end
   

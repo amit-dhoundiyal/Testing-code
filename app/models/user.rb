@@ -7,6 +7,7 @@ class User < ApplicationRecord
 	validates :password, length: { in: 6..20 }
 	validates :mobile_no, length: { in: 8..15 },uniqueness: true
 	validates :mobile_code, presence: true
+	validates :address, presence: true
 
 
 	def self.generate_password
