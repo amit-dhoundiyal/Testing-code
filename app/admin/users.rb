@@ -2,7 +2,18 @@ ActiveAdmin.register User  do
 		permit_params :name, :email, :password_digest, :mobile_code, :mobile_no, :country_name
 		config.clear_action_items!
 		menu priority: 4
-		config.filters = false
+		remove_filter   :created_at
+		remove_filter   :updated_at
+		remove_filter   :mobile_no
+		remove_filter   :mobile_code
+		remove_filter   :password_digest
+		remove_filter   :country_name
+		remove_filter   :authentication_token
+		remove_filter   :address
+		filter :is_block,label: "Active"
+		filter :name,label: "User Name"
+		filter :email,label: "User Email"
+
 	
 		
 

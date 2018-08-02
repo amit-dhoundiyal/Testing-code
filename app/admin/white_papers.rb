@@ -1,7 +1,10 @@
 ActiveAdmin.register WhitePaper do 
 	permit_params :title,:description,:file
 	menu priority: 5
-	config.filters = false
+	remove_filter   :created_at
+	remove_filter   :updated_at
+	remove_filter   :image
+	remove_filter   :file
 	
 
 

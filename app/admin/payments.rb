@@ -1,7 +1,14 @@
 ActiveAdmin.register Payment do
 	config.clear_action_items!
     menu priority: 3
-    config.filters = false
+	remove_filter   :updated_at
+	remove_filter   :user
+	remove_filter   :transaction_id
+	remove_filter   :tokens
+	remove_filter   :amount
+	remove_filter   :transaction_status
+	filter :created_at,label: "Filter by date"
+
   
 	#remove_filter :updated_at
 # See permitted parameters documentation:
