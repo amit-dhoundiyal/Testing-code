@@ -1,4 +1,4 @@
-ActiveAdmin.register WhitePaper do 
+ActiveAdmin.register WhitePaper,as: "White Paper Management" do 
 	permit_params :title,:description,:file
 	menu priority: 5
 	remove_filter   :created_at
@@ -39,9 +39,9 @@ ActiveAdmin.register WhitePaper do
 		   
 		column :actions do |i|
 		           links = []
-		           links << link_to('View', admin_white_paper_path(i.id))
-		           links << link_to('Edit',edit_admin_white_paper_path(i.id))
-		           links << link_to('Delete', admin_white_paper_path(i.id),method: :delete ,data: { confirm: 'Are you sure you want to delete ?' })
+		           links << link_to('View', admin_white_paper_management_path(i.id))
+		           links << link_to('Edit',edit_admin_white_paper_management_path(i.id))
+		           links << link_to('Delete', admin_white_paper_management_path(i.id),method: :delete ,data: { confirm: 'Are you sure you want to delete ?' })
 		           links.join(' ').html_safe
 		             
 		          

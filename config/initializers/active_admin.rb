@@ -255,7 +255,7 @@ ActiveAdmin.setup do |config|
   # Pagination is enabled by default for all resources.
   # You can control the default per page count for all resources here.
   #
-  # config.default_per_page = 30
+   config.default_per_page = 10
   #
   # You can control the max per page count too.
   #
@@ -286,7 +286,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-   config.footer = "Create Ethereum"
+   config.footer = "Admin Panel created by Mobiloitte Technologies Private Ltd. Copyright © 2018"
 
   # == Sorting
   #

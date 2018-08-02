@@ -2,6 +2,11 @@
 //= require active_admin_flat_skin
 //= require jquery
 //= require jquery.validate
+window.onload = function()
+{
+   document.getElementById('diplay-filter').innerHTML= "Filter";
+
+}
 
 
  $(document).click(function(){

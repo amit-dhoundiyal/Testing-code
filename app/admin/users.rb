@@ -1,7 +1,7 @@
-ActiveAdmin.register User  do
+ActiveAdmin.register User,as: "User Management" do
 		permit_params :name, :email, :password_digest, :mobile_code, :mobile_no, :country_name
 		config.clear_action_items!
-		menu priority: 4
+		menu priority: 1
 		remove_filter   :created_at
 		remove_filter   :updated_at
 		remove_filter   :mobile_no
@@ -30,7 +30,7 @@ ActiveAdmin.register User  do
 
            column :actions do |i|
            links = []
-           links << link_to('View', admin_user_path(i.id))
+           links << link_to('View', admin_user_management_path(i.id))
            # links << link_to('Edit', edit_admin_user_path(i.id))
            # links << link_to('Delete', admin_user_path(i.id),method: :delete ,data: { confirm: 'Are you sure you want to delete ?' })
 	       if  i.is_block == false

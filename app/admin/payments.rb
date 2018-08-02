@@ -1,6 +1,6 @@
-ActiveAdmin.register Payment do
+ActiveAdmin.register Payment,as: "Payment Management" do
 	config.clear_action_items!
-    menu priority: 3
+    menu priority: 4
 	remove_filter   :updated_at
 	remove_filter   :user
 	remove_filter   :transaction_id
