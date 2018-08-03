@@ -26,10 +26,10 @@ ActiveAdmin.register Payment,as: "Payment Management" do
         index do
 		   
 		   selectable_column
-		   column :transaction_id
-		   column :amount
-		   column :tokens
-		   column :transaction_status
+		   column :transaction_id,sortable: false
+		   column :amount,sortable: false
+		   column :tokens,sortable: false
+		   column :transaction_status,sortable: false
 
      #       column :actions do |i|
      #       links = []

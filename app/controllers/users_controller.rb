@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 	def create
 		binding.pry
 	  @user = User.new(user_params)
+	  @user.authentication_token=params[:authenticity_token]
       if @user.save
       	flash[:success]  = "Signup Succesfully"
       	redirect_to  address_users_path

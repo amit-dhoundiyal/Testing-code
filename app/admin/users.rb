@@ -14,6 +14,7 @@ ActiveAdmin.register User,as: "User Management" do
 		filter :name,label: "User Name"
 		filter :email,label: "User Email"
 
+
 	
 		
 
@@ -22,8 +23,8 @@ ActiveAdmin.register User,as: "User Management" do
         index do
 		   
 		   selectable_column
-		   column :id, sortable: false
-		   column :name, sortable: false
+		   column :id, sortable: true
+		   column :name, sortable: false  
 		   column :email, sortable: false
 		   column :mobile_no, sortable: false
 		   column :country_name, sortable: false
@@ -64,6 +65,7 @@ ActiveAdmin.register User,as: "User Management" do
 		         render :admin_user
 		     end
 		   end
+		   	
 
 		end
 

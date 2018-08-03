@@ -1,13 +1,14 @@
 class User < ApplicationRecord
 	acts_as_token_authenticatable
 	has_secure_password
+
   
 	validates :name, presence: true
 	validates :email, presence: true,uniqueness: true
 	validates :password, length: { in: 6..20 }
 	validates :mobile_no, length: { in: 8..15 },uniqueness: true
 	validates :mobile_code, presence: true
-	validates :address, presence: true
+	#validates :address, presence: true
 
 
 	def self.generate_password
